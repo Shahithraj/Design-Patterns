@@ -15,4 +15,8 @@ class Address {
 }
 
 const user = new User('shahith', undefined, undefined, new Address('gandhi street','600001'));
+
+/*
+Need to pass undefined explicitly, if there are more parameter it will more dificult
+*/
 console.log(user);
