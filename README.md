@@ -16,3 +16,16 @@ Using known patterns (like "Singleton" or "Observer") helps teams communicate de
 
 → 5. Avoid Anti-Patterns
 They help you avoid poor solutions that can lead to buggy, tightly coupled, or untestable code.
+
+
+Creational Patterns
+
+Singleton – Only one instance exists.
+
+Factory Method – Create objects without specifying the exact class.
+
+Builder – Step-by-step object creation.
+
+Prototype – Clone existing objects.
+
+Abstract Factory – Factory of factories.

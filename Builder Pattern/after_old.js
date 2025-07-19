@@ -2,6 +2,18 @@ class User {
     constructor(name) {
         this.name = name;
     }
+
+    getUserName() {
+        return this.name;
+    }
+
+    getUserAge() {
+        return this.age
+    }
+
+    getUserAddress() {
+        return this.address;
+    }
 }
 
 class Address {
@@ -32,11 +44,11 @@ class UserBuilder {
     }
 
     build() {
-        this.user;
+        return this.user; // return user instance
     }
 }
 
-const user = new UserBuilder('shahith').setAge(18);
 const address = new Address('gandhi street','600001');
-user.setAddress(address)
-console.log(user.build());
+
+const user = new UserBuilder('shahith').setAge(18).setAddress(address).build(); // this will have user instance not userBuilder
+console.log(user.getUserName());
